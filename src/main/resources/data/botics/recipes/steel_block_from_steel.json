@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "botics:steel"
+    }
+  },
+  "result": {
+    "item": "botics:steel_block"
+  }
+}

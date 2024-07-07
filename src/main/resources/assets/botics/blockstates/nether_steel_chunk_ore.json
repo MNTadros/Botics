@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "botics:block/nether_steel_chunk_ore"
+    }
+  }
+}

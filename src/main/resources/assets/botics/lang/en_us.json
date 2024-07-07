@@ -2,6 +2,11 @@
   "item.botics.steel": "Steel",
   "item.botics.steel_chunk": "Steel Chunk",
 
+  "block.botics.steel_chunk_ore": "Steel Chunk Ore",
+  "block.botics.deepslate_steel_chunk_ore": "Deepslate Steel Chunk Ore",
+  "block.botics.nether_steel_chunk_ore": "Nether Steel Chunk Ore",
+  "block.botics.end_stone_steel_chunk_ore": "End Stone Steel Chunk Ore",
+
   "block.botics.steel_block": "Block of Steel",
   "itemgroup.resources" : "Botics Resources"
 }

@@ -17,6 +17,11 @@ public class ModItemGroups {
         entries.add(ModItems.STEEL_CHUNK);
         entries.add(ModItems.STEEL);
         entries.add(ModBlocks.STEEL_BLOCK);
+
+        entries.add(ModBlocks.STEEL_CHUNK_ORE);
+        entries.add(ModBlocks.DEEPSLATE_STEEL_CHUNK_ORE);
+        entries.add(ModBlocks.END_STONE_STEEL_CHUNK_ORE);
+        entries.add(ModBlocks.NETHER_STEEL_CHUNK_ORE);
     } ).build());
 
     public static void registerItemGroups(){

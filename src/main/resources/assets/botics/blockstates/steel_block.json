@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "botics:block/steel_block"
+    }
+  }
+}

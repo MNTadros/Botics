@@ -1,0 +1,7 @@
+{
+  "item.botics.steel": "Steel",
+  "item.botics.steel_chunk": "Steel Chunk",
+
+  "block.botics.steel_block": "Block of Steel",
+  "itemgroup.resources" : "Botics Resources"
+}

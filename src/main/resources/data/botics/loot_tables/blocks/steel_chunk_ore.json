@@ -47,7 +47,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "botics:steel_chunks"
+              "name": "botics:steel_chunk"
             }
           ]
         }

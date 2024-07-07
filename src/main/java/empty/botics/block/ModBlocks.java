@@ -1,11 +1,13 @@
 package empty.botics.block;
 
 import empty.botics.Botics;
+import empty.botics.block.custom.WaterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.SpongeBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -23,6 +25,8 @@ public class ModBlocks {
     public static final Block NETHER_STEEL_CHUNK_ORE = registerBlock("nether_steel_chunk_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f), UniformIntProvider.create(4,7)));
     public static final Block END_STONE_STEEL_CHUNK_ORE = registerBlock("end_stone_steel_chunk_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2.5f), UniformIntProvider.create(4,7)));
 
+    public static final Block WATER_BLOCK = registerBlock("water_block", new WaterBlock(FabricBlockSettings.copyOf(Blocks.SPONGE).strength(1f).sounds(BlockSoundGroup.SOUL_SAND)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(Registries.BLOCK,new Identifier(Botics.MOD_ID,name),block);
@@ -37,5 +41,3 @@ public class ModBlocks {
 
     }
 }
-//TODO
-//FIX LOOT TABLES FOR ALL ORE VARIANTS

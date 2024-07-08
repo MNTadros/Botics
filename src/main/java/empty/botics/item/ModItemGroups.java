@@ -12,21 +12,25 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup RESOURCES_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Botics.MOD_ID,"resources"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.resources")).icon(() -> new ItemStack(ModItems.STEEL)).entries((displayContext, entries) -> {
+    public static final ItemGroup RESOURCES_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Botics.MOD_ID,"resources"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.resources")).icon(() -> new ItemStack(ModItems.SILVER)).entries((displayContext, entries) -> {
 
-        entries.add(ModItems.STEEL_CHUNK);
-        entries.add(ModItems.STEEL);
-        entries.add(ModBlocks.STEEL_BLOCK);
-
-        entries.add(ModBlocks.STEEL_CHUNK_ORE);
-        entries.add(ModBlocks.DEEPSLATE_STEEL_CHUNK_ORE);
-        entries.add(ModBlocks.END_STONE_STEEL_CHUNK_ORE);
-        entries.add(ModBlocks.NETHER_STEEL_CHUNK_ORE);
-
+        entries.add(ModItems.SILVER_CHUNK);
+        entries.add(ModItems.SILVER);
+        entries.add(ModBlocks.SILVER_BLOCK);
+        entries.add(ModBlocks.PLATINUM_BLOCK);
         entries.add(ModBlocks.WATER_BLOCK);
+
+        entries.add(ModBlocks.SILVER_CHUNK_ORE);
+        entries.add(ModBlocks.DEEPSLATE_SILVER_CHUNK_ORE);
+        entries.add(ModBlocks.END_STONE_SILVER_CHUNK_ORE);
+        entries.add(ModBlocks.NETHER_Silver_CHUNK_ORE);
+
         entries.add(ModItems.METAL_DETECTOR);
         entries.add(ModItems.TENDRIL);
         entries.add(ModItems.FOSSIL_FUEL_CHUNK);
+        entries.add(ModItems.PLATINUM);
+        entries.add(ModItems.PLATINUM_SOCKET);
+        entries.add(ModItems.GOLD_SCRAP);
     } ).build());
 
     public static void registerItemGroups(){

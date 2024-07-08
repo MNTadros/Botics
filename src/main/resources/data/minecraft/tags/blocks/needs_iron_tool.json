@@ -1,8 +1,9 @@
 {
   "replace": false,
   "values": [
-    "botics:steel_chunk_ore",
-    "botics:nether_steel_chunk_ore",
-    "botics:end_stone_steel_chunk_ore"
+    "botics:silver_chunk_ore",
+    "botics:nether_silver_chunk_ore",
+    "botics:end_stone_silver_chunk_ore",
+    "botics:platinum_block"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "botics:steel_block",
-    "botics:deepslate_steel_chunk_ore"
+    "botics:silver_block",
+    "botics:deepslate_silver_chunk_ore"
   ]
 }

@@ -1,18 +1,22 @@
 {
-  "item.botics.steel": "Steel",
-  "item.botics.steel_chunk": "Steel Chunk",
+  "item.botics.silver": "Silver",
+  "item.botics.silver_chunk": "Silver Chunk",
   "item.botics.metal_detector": "Metal Detector",
   "item.botics.tendril": "Tendril",
   "item.botics.fossil_fuel_chunk": "Fossil Fuel Chunk",
+  "item.botics.gold_scrap": "Gold Scrap",
+  "item.botics.platinum": "Platinum Ingot",
+  "item.botics.platinum_socket": "Platinum Socket",
 
 
-  "block.botics.steel_chunk_ore": "Steel Chunk Ore",
-  "block.botics.deepslate_steel_chunk_ore": "Deepslate Steel Chunk Ore",
-  "block.botics.nether_steel_chunk_ore": "Nether Steel Chunk Ore",
-  "block.botics.end_stone_steel_chunk_ore": "End Stone Steel Chunk Ore",
+  "block.botics.silver_chunk_ore": "Silver Chunk Ore",
+  "block.botics.deepslate_silver_chunk_ore": "Deepslate Silver Chunk Ore",
+  "block.botics.nether_silver_chunk_ore": "Nether Silver Chunk Ore",
+  "block.botics.end_stone_silver_chunk_ore": "End Stone Silver Chunk Ore",
 
-  "block.botics.steel_block": "Block of Steel",
+  "block.botics.silver_block": "Block of Silver",
+  "block.botics.platinum_block": "Block of Platinum",
   "block.botics.water_block": "Aqueous Block",
 
-  "itemgroup.resources" : "Botics Resources"
+  "itemgroup.resources" : "Botics"
 }

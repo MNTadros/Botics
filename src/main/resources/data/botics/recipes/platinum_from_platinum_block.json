@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "botics:platinum_block"
+    }
+  ],
+  "result": {
+    "item": "botics:platinum",
+    "count": 9
+  }
+}

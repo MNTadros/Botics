@@ -13,8 +13,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item STEEL = registerItem("steel", new Item(new FabricItemSettings()));
-    public static final Item STEEL_CHUNK = registerItem("steel_chunk", new Item(new FabricItemSettings()));
+    public static final Item SILVER = registerItem("silver", new Item(new FabricItemSettings()));
+    public static final Item SILVER_CHUNK = registerItem("silver_chunk", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM = registerItem("platinum", new Item(new FabricItemSettings()));
+    public static final Item PLATINUM_SOCKET = registerItem("platinum_socket", new Item(new FabricItemSettings()));
+    public static final Item GOLD_SCRAP = registerItem("gold_scrap", new Item(new FabricItemSettings()));
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
     public static final Item TENDRIL = registerItem("tendril", new Item(new FabricItemSettings().food(ModFoodComponents.TENDRIL)));
@@ -22,8 +25,8 @@ public class ModItems {
 
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
-        entries.add(STEEL);
-        entries.add(STEEL_CHUNK);
+        entries.add(SILVER);
+        entries.add(SILVER_CHUNK);
     }
 
     private static Item registerItem(String name, Item item){

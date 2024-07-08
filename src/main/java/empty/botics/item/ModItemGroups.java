@@ -31,6 +31,8 @@ public class ModItemGroups {
         entries.add(ModItems.PLATINUM);
         entries.add(ModItems.PLATINUM_SOCKET);
         entries.add(ModItems.GOLD_SCRAP);
+        entries.add(ModItems.WRENCH);
+
     } ).build());
 
     public static void registerItemGroups(){

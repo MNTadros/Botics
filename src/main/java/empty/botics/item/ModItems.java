@@ -23,6 +23,8 @@ public class ModItems {
     public static final Item TENDRIL = registerItem("tendril", new Item(new FabricItemSettings().food(ModFoodComponents.TENDRIL)));
     public static final Item FOSSIL_FUEL_CHUNK = registerItem("fossil_fuel_chunk", new Item(new FabricItemSettings()));
 
+    public static final Item WRENCH = registerItem("wrench", new Item(new FabricItemSettings().maxCount(1)));
+
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(SILVER);

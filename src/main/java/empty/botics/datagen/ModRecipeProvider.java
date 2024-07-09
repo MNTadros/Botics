@@ -41,15 +41,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SILVER, RecipeCategory.DECORATIONS,
                 ModBlocks.SILVER_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SILVER, 1)
-                .pattern("CCC")
-                .pattern("CSC")
-                .pattern("CCC")
-                .input('C', Items.COBBLESTONE)
-                .input('S', ModItems.SILVER_CHUNK)
-                .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
-                .criterion(hasItem(ModItems.SILVER_CHUNK), conditionsFromItem(ModItems.SILVER_CHUNK))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SILVER)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_PICKAXE, 1)
+                .pattern("PPP")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PLATINUM)
+                .input('S', ModItems.SILVER)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .criterion(hasItem(ModItems.SILVER), conditionsFromItem(ModItems.SILVER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_AXE, 1)
+                .pattern("PP ")
+                .pattern("PS ")
+                .pattern(" S ")
+                .input('P', ModItems.PLATINUM)
+                .input('S', ModItems.SILVER)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .criterion(hasItem(ModItems.SILVER), conditionsFromItem(ModItems.SILVER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_SHOVEL, 1)
+                .pattern(" P ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PLATINUM)
+                .input('S', ModItems.SILVER)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .criterion(hasItem(ModItems.SILVER), conditionsFromItem(ModItems.SILVER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_SWORD, 1)
+                .pattern(" P ")
+                .pattern(" P ")
+                .pattern(" S ")
+                .input('P', ModItems.PLATINUM)
+                .input('S', ModItems.SILVER)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .criterion(hasItem(ModItems.SILVER), conditionsFromItem(ModItems.SILVER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_HOE, 1)
+                .pattern("PP ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('P', ModItems.PLATINUM)
+                .input('S', ModItems.SILVER)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .criterion(hasItem(ModItems.SILVER), conditionsFromItem(ModItems.SILVER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_HOE)));
     }
 }
 

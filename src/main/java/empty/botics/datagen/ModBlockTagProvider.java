@@ -53,8 +53,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_STONE_SILVER_CHUNK_ORE)
                 .add(ModBlocks.DEEPSLATE_SILVER_CHUNK_ORE);
 
-
-        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
                 .add(ModBlocks.WATER_BLOCK);
+
+
     }
 }

@@ -36,6 +36,12 @@ public class ModItemGroups {
         entries.add(ModItems.URANIUM);
         entries.add(ModItems.HOURGLASS);
 
+        entries.add(ModItems.PLATINUM_PICKAXE);
+        entries.add(ModItems.PLATINUM_AXE);
+        entries.add(ModItems.PLATINUM_SHOVEL);
+        entries.add(ModItems.PLATINUM_SWORD);
+        entries.add(ModItems.PLATINUM_HOE);
+
     } ).build());
 
     public static void registerItemGroups(){

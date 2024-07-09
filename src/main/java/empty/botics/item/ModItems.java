@@ -5,8 +5,7 @@ import empty.botics.item.custom.MetalDetectorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -28,6 +27,17 @@ public class ModItems {
 
     public static final Item URANIUM = registerItem("uranium", new Item(new FabricItemSettings()));
     public static final Item HOURGLASS = registerItem("hourglass", new Item(new FabricItemSettings()));
+
+    public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
+            new PickaxeItem(ModToolMaterial.PLATINUM, 2, 2f, new FabricItemSettings()));
+    public static final Item PLATINUM_AXE = registerItem("platinum_axe",
+            new AxeItem(ModToolMaterial.PLATINUM, 3, 1f, new FabricItemSettings()));
+    public static final Item PLATINUM_SHOVEL = registerItem("platinum_shovel",
+            new ShovelItem(ModToolMaterial.PLATINUM, 0, 0f, new FabricItemSettings()));
+    public static final Item PLATINUM_SWORD = registerItem("platinum_sword",
+            new SwordItem(ModToolMaterial.PLATINUM, 5, 3f, new FabricItemSettings()));
+    public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
+            new HoeItem(ModToolMaterial.PLATINUM, 0, 0f, new FabricItemSettings()));
 
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(SILVER);

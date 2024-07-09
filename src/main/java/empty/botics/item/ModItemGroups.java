@@ -32,6 +32,7 @@ public class ModItemGroups {
         entries.add(ModItems.PLATINUM_SOCKET);
         entries.add(ModItems.GOLD_SCRAP);
         entries.add(ModItems.WRENCH);
+        entries.add(ModItems.FRIEND_BALL);
 
     } ).build());
 

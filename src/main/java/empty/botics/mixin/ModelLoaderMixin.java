@@ -25,4 +25,9 @@ public abstract class ModelLoaderMixin {
     public void addWrench(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
         this.addModel(new ModelIdentifier(Botics.MOD_ID, "wrench_3d", "inventory"));
     }
+
+    @Inject(method = "<init>", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/render/model/ModelLoader;addModel(Lnet/minecraft/client/util/ModelIdentifier;)V", ordinal = 3, shift = At.Shift.AFTER))
+    public void addFriendBall(BlockColors blockColors, Profiler profiler, Map<Identifier, JsonUnbakedModel> jsonUnbakedModels, Map<Identifier, List<ModelLoader.SourceTrackedData>> blockStates, CallbackInfo ci) {
+        this.addModel(new ModelIdentifier(Botics.MOD_ID, "friend_ball_3d", "inventory"));
+    }
 }

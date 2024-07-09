@@ -2,13 +2,16 @@
   "item.botics.silver": "Silver",
   "item.botics.silver_chunk": "Silver Chunk",
   "item.botics.metal_detector": "Metal Detector",
+  "tooltip.botics.metal_detector.tooltip": "Finds valuable ore underground!",
+
   "item.botics.tendril": "Tendril",
   "item.botics.fossil_fuel_chunk": "Fossil Fuel Chunk",
   "item.botics.gold_scrap": "Gold Scrap",
   "item.botics.platinum": "Platinum Ingot",
   "item.botics.platinum_socket": "Platinum Socket",
-  "item.botics.wrench": "Wrench",
 
+  "item.botics.wrench": "Wrench",
+  "item.botics.friend_ball": "Friend Ball",
 
   "block.botics.silver_chunk_ore": "Silver Chunk Ore",
   "block.botics.deepslate_silver_chunk_ore": "Deepslate Silver Chunk Ore",

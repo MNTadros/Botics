@@ -39,6 +39,15 @@ public class ModItems {
     public static final Item PLATINUM_HOE = registerItem("platinum_hoe",
             new HoeItem(ModToolMaterial.PLATINUM, 0, 0f, new FabricItemSettings()));
 
+    public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PLATINUM_BOOTS = registerItem("platinum_boots",
+            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(SILVER);
         entries.add(SILVER_CHUNK);

@@ -30,5 +30,10 @@
   "item.botics.platinum_sword": "Platinum Sword",
   "item.botics.platinum_hoe": "Platinum Hoe",
 
+  "item.botics.platinum_helmet": "Platinum Helmet",
+  "item.botics.platinum_chestplate": "Platinum Chestplate",
+  "item.botics.platinum_leggings": "Platinum Leggings",
+  "item.botics.platinum_boots": "Platinum Boots",
+
   "itemgroup.resources" : "Botics"
 }

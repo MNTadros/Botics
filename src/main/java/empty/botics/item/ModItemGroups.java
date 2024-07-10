@@ -42,6 +42,11 @@ public class ModItemGroups {
         entries.add(ModItems.PLATINUM_SWORD);
         entries.add(ModItems.PLATINUM_HOE);
 
+        entries.add(ModItems.PLATINUM_HELMET);
+        entries.add(ModItems.PLATINUM_CHESTPLATE);
+        entries.add(ModItems.PLATINUM_LEGGINGS);
+        entries.add(ModItems.PLATINUM_BOOTS);
+
     } ).build());
 
     public static void registerItemGroups(){

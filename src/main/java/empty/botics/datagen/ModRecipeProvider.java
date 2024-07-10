@@ -40,6 +40,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SILVER, RecipeCategory.DECORATIONS,
                 ModBlocks.SILVER_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PLATINUM, RecipeCategory.DECORATIONS,
+                ModBlocks.PLATINUM_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOLD_SCRAP, 1)
                 .pattern("INI")

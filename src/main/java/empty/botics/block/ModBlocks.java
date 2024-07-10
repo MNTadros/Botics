@@ -25,6 +25,9 @@ public class ModBlocks {
     public static final Block NETHER_Silver_CHUNK_ORE = registerBlock("nether_silver_chunk_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHERRACK).strength(1.5f), UniformIntProvider.create(4,7)));
     public static final Block END_STONE_SILVER_CHUNK_ORE = registerBlock("end_stone_silver_chunk_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2.5f), UniformIntProvider.create(4,7)));
 
+    public static final Block PLATINUM_ORE = registerBlock("platinum_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3f), UniformIntProvider.create(4,5)));
+
+
     public static final Block WATER_BLOCK = registerBlock("water_block", new WaterBlock(FabricBlockSettings.copyOf(Blocks.SPONGE).strength(1f).sounds(BlockSoundGroup.SOUL_SAND)));
 
     private static Block registerBlock(String name, Block block){

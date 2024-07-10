@@ -22,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SILVER_CHUNK_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_Silver_CHUNK_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_SILVER_CHUNK_ORE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_ORE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_BLOCK);
     }
 

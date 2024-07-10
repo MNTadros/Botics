@@ -25,6 +25,8 @@ public class ModItemGroups {
         entries.add(ModBlocks.END_STONE_SILVER_CHUNK_ORE);
         entries.add(ModBlocks.NETHER_Silver_CHUNK_ORE);
 
+        entries.add(ModBlocks.PLATINUM_ORE);
+
         entries.add(ModItems.METAL_DETECTOR);
         entries.add(ModItems.TENDRIL);
         entries.add(ModItems.FOSSIL_FUEL_CHUNK);

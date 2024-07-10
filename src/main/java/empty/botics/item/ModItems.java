@@ -2,6 +2,7 @@ package empty.botics.item;
 
 import empty.botics.Botics;
 import empty.botics.item.custom.MetalDetectorItem;
+import empty.botics.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -40,7 +41,7 @@ public class ModItems {
             new HoeItem(ModToolMaterial.PLATINUM, 0, 0f, new FabricItemSettings()));
 
     public static final Item PLATINUM_HELMET = registerItem("platinum_helmet",
-            new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item PLATINUM_CHESTPLATE = registerItem("platinum_chestplate",
             new ArmorItem(ModArmorMaterials.PLATINUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item PLATINUM_LEGGINGS = registerItem("platinum_leggings",

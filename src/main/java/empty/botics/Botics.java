@@ -3,6 +3,7 @@ package empty.botics;
 import empty.botics.block.ModBlocks;
 import empty.botics.item.ModItemGroups;
 import empty.botics.item.ModItems;
+import empty.botics.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -18,6 +19,7 @@ public class Botics implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModLootTableModifiers.modifyLootTables();
 
 		FuelRegistry.INSTANCE.add(ModItems.FOSSIL_FUEL_CHUNK,500);
 	}

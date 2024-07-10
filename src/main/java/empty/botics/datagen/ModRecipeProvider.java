@@ -41,6 +41,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SILVER, RecipeCategory.DECORATIONS,
                 ModBlocks.SILVER_BLOCK);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOLD_SCRAP, 1)
+                .pattern("INI")
+                .pattern("NNN")
+                .pattern(" I ")
+                .input('I', Items.GOLD_INGOT)
+                .input('N', Items.GOLD_NUGGET)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GOLD_SCRAP)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_PICKAXE, 1)
                 .pattern("PPP")
                 .pattern(" S ")

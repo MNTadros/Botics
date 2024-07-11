@@ -1,6 +1,6 @@
-#BOTICS (Fabric) [1.20.X] 
+# BOTICS (Fabric) [1.20.X] 
 
-##TODO:
+## TODO:
 - [X] Add effect when full Platinum Armor is worn
 - [X] Add gold scraps as an itme drop
 - [X] Add Platinum Ore (texture, droptable, smeltable)

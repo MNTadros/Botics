@@ -17,7 +17,11 @@ public class ModItems {
     public static final Item SILVER_CHUNK = registerItem("silver_chunk", new Item(new FabricItemSettings()));
     public static final Item PLATINUM = registerItem("platinum", new Item(new FabricItemSettings()));
     public static final Item PLATINUM_SOCKET = registerItem("platinum_socket", new Item(new FabricItemSettings()));
+
     public static final Item GOLD_SCRAP = registerItem("gold_scrap", new Item(new FabricItemSettings()));
+
+    public static final Item RAW_PLATINUM = registerItem("raw_platinum", new Item(new FabricItemSettings()));
+    public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new FabricItemSettings()));
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
     public static final Item TENDRIL = registerItem("tendril", new Item(new FabricItemSettings().food(ModFoodComponents.TENDRIL)));

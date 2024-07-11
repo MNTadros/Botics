@@ -15,11 +15,18 @@ import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
+
     private static final List<ItemConvertible> SILVER_ORE_SMELTABLES = List.of(ModItems.SILVER_CHUNK,
             ModBlocks.SILVER_CHUNK_ORE, ModBlocks.DEEPSLATE_SILVER_CHUNK_ORE, ModBlocks.NETHER_Silver_CHUNK_ORE, ModBlocks.END_STONE_SILVER_CHUNK_ORE);
 
     private static final List<ItemConvertible> SILVER_SMELTABLES = List.of(ModItems.SILVER,
             ModItems.SILVER_CHUNK);
+
+    private static final List<ItemConvertible> PLATINUM_SMELTABLES = List.of(ModItems.PLATINUM,
+            ModItems.RAW_PLATINUM);
+
+    private static final List<ItemConvertible> URANIUM_SMELTABLES = List.of(ModItems.URANIUM,
+            ModItems.RAW_URANIUM);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -37,6 +44,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, SILVER_SMELTABLES, RecipeCategory.MISC, ModItems.SILVER,
                 0.7f, 100, "silver");
 
+        offerSmelting(exporter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM,
+                0.7f, 200, "platinum");
+        offerBlasting(exporter, PLATINUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLATINUM,
+                0.7f, 100, "platinum");
+
+        offerSmelting(exporter, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM,
+                0.7f, 200, "uranium");
+        offerBlasting(exporter, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM,
+                0.7f, 100, "uranium");
+
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SILVER, RecipeCategory.DECORATIONS,
                 ModBlocks.SILVER_BLOCK);
@@ -52,6 +69,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GOLD_SCRAP)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_SOCKET, 1)
+                .pattern(" T ")
+                .pattern("TBT")
+                .pattern(" T ")
+                .input('B', ModBlocks.PLATINUM_BLOCK)
+                .input('T', Items.TERRACOTTA)
+                .criterion(hasItem(ModBlocks.PLATINUM_BLOCK), conditionsFromItem(ModBlocks.PLATINUM_BLOCK))
+                .criterion(hasItem(Items.TERRACOTTA), conditionsFromItem(Items.TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_SOCKET)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_PICKAXE, 1)
                 .pattern("PPP")
@@ -102,6 +129,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
                 .criterion(hasItem(ModItems.SILVER), conditionsFromItem(ModItems.SILVER))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_HELMET, 1)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("   ")
+                .input('P', ModItems.PLATINUM)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_CHESTPLATE, 1)
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('P', ModItems.PLATINUM)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_LEGGINGS, 1)
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PLATINUM)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_BOOTS, 1)
+                .pattern("   ")
+                .pattern("P P")
+                .pattern("P P")
+                .input('P', ModItems.PLATINUM)
+                .criterion(hasItem(ModItems.PLATINUM), conditionsFromItem(ModItems.PLATINUM))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_BOOTS)));
     }
 }
 

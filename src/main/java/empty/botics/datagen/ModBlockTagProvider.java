@@ -39,7 +39,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.END_STONE_SILVER_CHUNK_ORE)
                 .add(ModBlocks.WATER_BLOCK)
                 .add(ModBlocks.PLATINUM_BLOCK)
-                .add(ModBlocks.PLATINUM_ORE);
+                .add(ModBlocks.PLATINUM_ORE)
+                .add(ModBlocks.URANIUM_ORE);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -48,6 +49,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SILVER_CHUNK_ORE)
                 .add(ModBlocks.PLATINUM_ORE)
+                .add(ModBlocks.URANIUM_ORE)
                 .add(ModBlocks.SILVER_BLOCK)
                 .add(ModBlocks.NETHER_Silver_CHUNK_ORE);
 

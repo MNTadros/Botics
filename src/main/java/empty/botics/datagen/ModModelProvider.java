@@ -24,6 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_STONE_SILVER_CHUNK_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PLATINUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.URANIUM_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_BLOCK);
     }
@@ -40,6 +41,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FOSSIL_FUEL_CHUNK, Models.GENERATED);
         itemModelGenerator.register(ModItems.URANIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.HOURGLASS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.RAW_PLATINUM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_URANIUM, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.PLATINUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PLATINUM_AXE, Models.HANDHELD);

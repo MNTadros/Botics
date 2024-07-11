@@ -32,7 +32,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.NETHER_Silver_CHUNK_ORE, copperLikeOreDrops(ModBlocks.NETHER_Silver_CHUNK_ORE, ModItems.SILVER_CHUNK));
         addDrop(ModBlocks.END_STONE_SILVER_CHUNK_ORE, copperLikeOreDrops(ModBlocks.END_STONE_SILVER_CHUNK_ORE, ModItems.SILVER_CHUNK));
 
-        addDrop(ModBlocks.PLATINUM_ORE, copperLikeOreDrops(ModBlocks.PLATINUM_ORE, ModItems.PLATINUM));
+        addDrop(ModBlocks.PLATINUM_ORE, copperLikeOreDrops(ModBlocks.PLATINUM_ORE, ModItems.RAW_PLATINUM));
+        addDrop(ModBlocks.URANIUM_ORE, copperLikeOreDrops(ModBlocks.URANIUM_ORE, ModItems.RAW_URANIUM));
+
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {

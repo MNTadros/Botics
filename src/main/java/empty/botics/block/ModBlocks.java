@@ -1,6 +1,7 @@
 package empty.botics.block;
 
 import empty.botics.Botics;
+import empty.botics.block.custom.SocketApplicatorBlock;
 import empty.botics.block.custom.TendrilCropBlock;
 import empty.botics.block.custom.WaterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -34,6 +35,8 @@ public class ModBlocks {
             new TendrilCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     public static final Block WATER_BLOCK = registerBlock("water_block", new WaterBlock(FabricBlockSettings.copyOf(Blocks.SPONGE).strength(1f).sounds(BlockSoundGroup.SOUL_SAND)));
+
+    public static final Block SOCKET_APPLICATOR = registerBlock("socket_applicator", new SocketApplicatorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);

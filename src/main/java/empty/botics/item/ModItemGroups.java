@@ -47,6 +47,8 @@ public class ModItemGroups {
         entries.add(ModItems.URANIUM);
         entries.add(ModItems.HOURGLASS);
 
+        entries.add(ModBlocks.SOCKET_APPLICATOR);
+
         entries.add(ModItems.PLATINUM_PICKAXE);
         entries.add(ModItems.PLATINUM_AXE);
         entries.add(ModItems.PLATINUM_SHOVEL);

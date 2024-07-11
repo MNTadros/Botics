@@ -19,6 +19,8 @@
 
   "item.botics.wrench": "Wrench",
   "item.botics.friend_ball": "Friend Ball",
+  "block.botics.socket_applicator": "Socket Station",
+
 
   "block.botics.silver_chunk_ore": "Silver Chunk Ore",
   "block.botics.deepslate_silver_chunk_ore": "Deepslate Silver Chunk Ore",

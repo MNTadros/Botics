@@ -7,13 +7,13 @@
 - [X] Add Raw Platinum
 - [X] Add Platinum Armor recipes
 - [X] Add Platinum Socket (recipe)
-- [ ] Add Platinum Socket (functionality)
-- [ ] Add Empty Socket (texture,recipe,functionality)
-- [ ] Add Silver Socket (texture,recipe,functionality)
+- [X] Add Silver Socket (texture,recipe)
+- [X] Add Uranium Socket (texture,recipe)
+- [X] Add tendril crop (texture, functionality)
+- [ ] Add Platinum,Silver,Uranium socket (functionality)
 
 - [ ] Add Boomba entity (3D Model, animations, natural spawn, droptable)
-- [ ] Add Friend ball functionality (remake texture?)
 - [ ] Add Socket Applicator (texture, recipe, functionality)
-- [ ] Add tendril crop (texture, functionality)
 - [ ] Add ore gen for Botics ores
+- [ ] Add Friend ball functionality (remake texture?)
 - [ ] Add Wrench functionality

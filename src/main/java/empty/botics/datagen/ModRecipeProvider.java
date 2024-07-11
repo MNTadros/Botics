@@ -80,6 +80,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.TERRACOTTA), conditionsFromItem(Items.TERRACOTTA))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PLATINUM_SOCKET)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SILVER_SOCKET, 1)
+                .pattern(" T ")
+                .pattern("TBT")
+                .pattern(" T ")
+                .input('B', ModBlocks.SILVER_BLOCK)
+                .input('T', Items.TERRACOTTA)
+                .criterion(hasItem(ModBlocks.SILVER_BLOCK), conditionsFromItem(ModBlocks.SILVER_BLOCK))
+                .criterion(hasItem(Items.TERRACOTTA), conditionsFromItem(Items.TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SILVER_SOCKET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.URANIUM_SOCKET, 1)
+                .pattern(" T ")
+                .pattern("TBT")
+                .pattern(" T ")
+                .input('B', ModBlocks.URANIUM_BLOCK)
+                .input('T', Items.TERRACOTTA)
+                .criterion(hasItem(ModBlocks.URANIUM_BLOCK), conditionsFromItem(ModBlocks.URANIUM_BLOCK))
+                .criterion(hasItem(Items.TERRACOTTA), conditionsFromItem(Items.TERRACOTTA))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.URANIUM_SOCKET)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PLATINUM_PICKAXE, 1)
                 .pattern("PPP")
                 .pattern(" S ")

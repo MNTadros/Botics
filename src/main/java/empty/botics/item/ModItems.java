@@ -17,7 +17,10 @@ public class ModItems {
     public static final Item SILVER = registerItem("silver", new Item(new FabricItemSettings()));
     public static final Item SILVER_CHUNK = registerItem("silver_chunk", new Item(new FabricItemSettings()));
     public static final Item PLATINUM = registerItem("platinum", new Item(new FabricItemSettings()));
+
+    public static final Item SILVER_SOCKET = registerItem("silver_socket", new Item(new FabricItemSettings()));
     public static final Item PLATINUM_SOCKET = registerItem("platinum_socket", new Item(new FabricItemSettings()));
+    public static final Item URANIUM_SOCKET = registerItem("uranium_socket", new Item(new FabricItemSettings()));
 
     public static final Item GOLD_SCRAP = registerItem("gold_scrap", new Item(new FabricItemSettings()));
 

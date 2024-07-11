@@ -40,6 +40,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WATER_BLOCK)
                 .add(ModBlocks.PLATINUM_BLOCK)
                 .add(ModBlocks.PLATINUM_ORE)
+                .add(ModBlocks.URANIUM_BLOCK)
                 .add(ModBlocks.URANIUM_ORE);
 
 
@@ -51,6 +52,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PLATINUM_ORE)
                 .add(ModBlocks.URANIUM_ORE)
                 .add(ModBlocks.SILVER_BLOCK)
+                .add(ModBlocks.URANIUM_BLOCK)
                 .add(ModBlocks.NETHER_Silver_CHUNK_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)

@@ -12,12 +12,13 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
-    public static final ItemGroup RESOURCES_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Botics.MOD_ID,"resources"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.resources")).icon(() -> new ItemStack(ModItems.SILVER)).entries((displayContext, entries) -> {
+    public static final ItemGroup RESOURCES_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(Botics.MOD_ID,"resources"), FabricItemGroup.builder().displayName(Text.translatable("itemgroup.resources")).icon(() -> new ItemStack(ModItems.RAW_PLATINUM)).entries((displayContext, entries) -> {
 
         entries.add(ModItems.SILVER_CHUNK);
         entries.add(ModItems.SILVER);
         entries.add(ModBlocks.SILVER_BLOCK);
         entries.add(ModBlocks.PLATINUM_BLOCK);
+        entries.add(ModBlocks.URANIUM_BLOCK);
         entries.add(ModBlocks.WATER_BLOCK);
 
         entries.add(ModBlocks.SILVER_CHUNK_ORE);
@@ -32,11 +33,14 @@ public class ModItemGroups {
         entries.add(ModBlocks.URANIUM_ORE);
         entries.add(ModItems.TENDRIL_SEEDS);
 
+        entries.add(ModItems.SILVER_SOCKET);
+        entries.add(ModItems.PLATINUM_SOCKET);
+        entries.add(ModItems.URANIUM_SOCKET);
+
         entries.add(ModItems.METAL_DETECTOR);
         entries.add(ModItems.TENDRIL);
         entries.add(ModItems.FOSSIL_FUEL_CHUNK);
         entries.add(ModItems.PLATINUM);
-        entries.add(ModItems.PLATINUM_SOCKET);
         entries.add(ModItems.GOLD_SCRAP);
         entries.add(ModItems.WRENCH);
         entries.add(ModItems.FRIEND_BALL);

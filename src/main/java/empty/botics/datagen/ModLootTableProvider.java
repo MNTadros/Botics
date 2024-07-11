@@ -28,6 +28,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.SILVER_BLOCK);
         addDrop(ModBlocks.PLATINUM_BLOCK);
+        addDrop(ModBlocks.URANIUM_BLOCK);
         addDrop(ModBlocks.WATER_BLOCK);
 
         addDrop(ModBlocks.SILVER_CHUNK_ORE, copperLikeOreDrops(ModBlocks.SILVER_CHUNK_ORE, ModItems.SILVER_CHUNK));

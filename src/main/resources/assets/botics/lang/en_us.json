@@ -10,7 +10,10 @@
   "item.botics.fossil_fuel_chunk": "Fossil Fuel Chunk",
   "item.botics.gold_scrap": "Gold Scrap",
   "item.botics.platinum": "Platinum Ingot",
+  "item.botics.silver_socket": "Silver Socket",
   "item.botics.platinum_socket": "Platinum Socket",
+  "item.botics.uranium_socket": "Uranium Socket",
+
   "item.botics.uranium": "Uranium",
   "item.botics.hourglass": "Hourglass",
 
@@ -30,6 +33,7 @@
 
   "block.botics.silver_block": "Block of Silver",
   "block.botics.platinum_block": "Block of Platinum",
+  "block.botics.uranium_block": "Block of Uranium",
   "block.botics.water_block": "Aqueous Block",
 
   "item.botics.platinum_pickaxe": "Platinum Pickaxe",

@@ -5,6 +5,8 @@
   "tooltip.botics.metal_detector.tooltip": "Finds valuable ore underground!",
 
   "item.botics.tendril": "Tendril",
+  "item.botics.tendril_seeds": "Tendril Seeds",
+
   "item.botics.fossil_fuel_chunk": "Fossil Fuel Chunk",
   "item.botics.gold_scrap": "Gold Scrap",
   "item.botics.platinum": "Platinum Ingot",

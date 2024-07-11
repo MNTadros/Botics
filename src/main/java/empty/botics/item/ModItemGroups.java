@@ -30,6 +30,7 @@ public class ModItemGroups {
 
         entries.add(ModBlocks.PLATINUM_ORE);
         entries.add(ModBlocks.URANIUM_ORE);
+        entries.add(ModItems.TENDRIL_SEEDS);
 
         entries.add(ModItems.METAL_DETECTOR);
         entries.add(ModItems.TENDRIL);

@@ -1,6 +1,7 @@
 package empty.botics.datagen;
 
 import empty.botics.block.ModBlocks;
+import empty.botics.block.custom.TendrilCropBlock;
 import empty.botics.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -27,6 +28,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.URANIUM_ORE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_BLOCK);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.TENDRIL_CROP, TendrilCropBlock.AGE, 0, 1, 2, 3, 4, 5);
     }
 
     @Override

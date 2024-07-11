@@ -1,6 +1,7 @@
 package empty.botics.block;
 
 import empty.botics.Botics;
+import empty.botics.block.custom.TendrilCropBlock;
 import empty.botics.block.custom.WaterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -28,6 +29,8 @@ public class ModBlocks {
     public static final Block PLATINUM_ORE = registerBlock("platinum_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3f), UniformIntProvider.create(4,5)));
     public static final Block URANIUM_ORE = registerBlock("uranium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(3f), UniformIntProvider.create(4,5)));
 
+    public static final Block TENDRIL_CROP = Registry.register(Registries.BLOCK, new Identifier(Botics.MOD_ID, "tendril_crop"),
+            new TendrilCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     public static final Block WATER_BLOCK = registerBlock("water_block", new WaterBlock(FabricBlockSettings.copyOf(Blocks.SPONGE).strength(1f).sounds(BlockSoundGroup.SOUL_SAND)));
 

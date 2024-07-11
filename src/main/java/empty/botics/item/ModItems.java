@@ -1,6 +1,7 @@
 package empty.botics.item;
 
 import empty.botics.Botics;
+import empty.botics.block.ModBlocks;
 import empty.botics.item.custom.MetalDetectorItem;
 import empty.botics.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -32,6 +33,9 @@ public class ModItems {
 
     public static final Item URANIUM = registerItem("uranium", new Item(new FabricItemSettings()));
     public static final Item HOURGLASS = registerItem("hourglass", new Item(new FabricItemSettings()));
+
+    public static final Item TENDRIL_SEEDS = registerItem("tendril_seeds",
+            new AliasedBlockItem(ModBlocks.TENDRIL_CROP, new FabricItemSettings()));
 
     public static final Item PLATINUM_PICKAXE = registerItem("platinum_pickaxe",
             new PickaxeItem(ModToolMaterial.PLATINUM, 2, 2f, new FabricItemSettings()));

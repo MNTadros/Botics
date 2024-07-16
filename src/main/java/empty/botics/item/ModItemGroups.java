@@ -47,8 +47,6 @@ public class ModItemGroups {
         entries.add(ModItems.URANIUM);
         entries.add(ModItems.HOURGLASS);
 
-        entries.add(ModBlocks.SOCKET_APPLICATOR);
-
         entries.add(ModItems.PLATINUM_PICKAXE);
         entries.add(ModItems.PLATINUM_AXE);
         entries.add(ModItems.PLATINUM_SHOVEL);
@@ -59,6 +57,8 @@ public class ModItemGroups {
         entries.add(ModItems.PLATINUM_CHESTPLATE);
         entries.add(ModItems.PLATINUM_LEGGINGS);
         entries.add(ModItems.PLATINUM_BOOTS);
+
+        entries.add(ModBlocks.GEM_POLISHING_STATION);
 
     } ).build());
 

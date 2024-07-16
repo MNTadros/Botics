@@ -1,6 +1,7 @@
 package empty.botics.screen;
 
-import empty.botics.block.entity.SocketApplicatorBlockEntity;
+
+import empty.botics.block.entity.GemPolishingStationBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -12,24 +13,24 @@ import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.slot.Slot;
 
-public class SocketApplicatingScreenHandler extends ScreenHandler {
+public class GemPolishingScreenHandler extends ScreenHandler {
     private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
-    public final SocketApplicatorBlockEntity blockEntity;
+    public final GemPolishingStationBlockEntity blockEntity;
 
-    public SocketApplicatingScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
+    public GemPolishingScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
                 new ArrayPropertyDelegate(2));
     }
 
-    public SocketApplicatingScreenHandler(int syncId, PlayerInventory playerInventory,
+    public GemPolishingScreenHandler(int syncId, PlayerInventory playerInventory,
                                      BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
-        super(ModScreenHandlers.SOCKET_APPLICATING_SCREEN_HANDLER, syncId);
+        super(ModScreenHandlers.GEM_POLISHING_SCREEN_HANDLER, syncId);
         checkSize(((Inventory) blockEntity), 2);
         this.inventory = ((Inventory) blockEntity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = arrayPropertyDelegate;
-        this.blockEntity = ((SocketApplicatorBlockEntity) blockEntity);
+        this.blockEntity = ((GemPolishingStationBlockEntity) blockEntity);
 
         this.addSlot(new Slot(inventory, 0, 80, 11));
         this.addSlot(new Slot(inventory, 1, 80, 59));

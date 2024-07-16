@@ -31,6 +31,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_BLOCK);
 
         blockStateModelGenerator.registerCrop(ModBlocks.TENDRIL_CROP, TendrilCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.GEM_POLISHING_STATION);
+
     }
 
     @Override

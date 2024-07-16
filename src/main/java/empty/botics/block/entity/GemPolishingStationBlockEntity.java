@@ -1,7 +1,9 @@
 package empty.botics.block.entity;
 
+
+import empty.botics.inventory.ImplementedInventory;
 import empty.botics.item.ModItems;
-import empty.botics.screen.SocketApplicatingScreenHandler;
+import empty.botics.screen.GemPolishingScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -21,7 +23,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class SocketApplicatorBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
+public class GemPolishingStationBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
@@ -31,14 +33,14 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
     private int progress = 0;
     private int maxProgress = 72;
 
-    public SocketApplicatorBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.SOCKET_APPLICATOR_BLOCK_ENTITY, pos, state);
+    public GemPolishingStationBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.GEM_POLISHING_STATION_BLOCK_ENTITY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
                 return switch (index) {
-                    case 0 -> SocketApplicatorBlockEntity.this.progress;
-                    case 1 -> SocketApplicatorBlockEntity.this.maxProgress;
+                    case 0 -> GemPolishingStationBlockEntity.this.progress;
+                    case 1 -> GemPolishingStationBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -46,8 +48,8 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
             @Override
             public void set(int index, int value) {
                 switch (index) {
-                    case 0 -> SocketApplicatorBlockEntity.this.progress = value;
-                    case 1 -> SocketApplicatorBlockEntity.this.maxProgress = value;
+                    case 0 -> GemPolishingStationBlockEntity.this.progress = value;
+                    case 1 -> GemPolishingStationBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -58,7 +60,6 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
         };
     }
 
-
     @Override
     public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
         buf.writeBlockPos(this.pos);
@@ -66,7 +67,7 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
 
     @Override
     public Text getDisplayName() {
-        return Text.literal("Socket Station");
+        return Text.literal("Gem Polishing Station");
     }
 
     @Override
@@ -78,20 +79,20 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
     protected void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt, inventory);
-        nbt.putInt("socket_applicator.progress", progress);
+        nbt.putInt("gem_polishing_station.progress", progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
         Inventories.readNbt(nbt, inventory);
-        progress = nbt.getInt("socket_applicator.progress");
+        progress = nbt.getInt("gem_polishing_station.progress");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new SocketApplicatingScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+        return new GemPolishingScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
@@ -123,7 +124,7 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
 
     private void craftItem() {
         this.removeStack(INPUT_SLOT, 1);
-        ItemStack result = new ItemStack(ModItems.SILVER);
+        ItemStack result = new ItemStack(ModItems.PLATINUM);
 
         this.setStack(OUTPUT_SLOT, new ItemStack(result.getItem(), getStack(OUTPUT_SLOT).getCount() + result.getCount()));
     }
@@ -137,8 +138,8 @@ public class SocketApplicatorBlockEntity extends BlockEntity implements Extended
     }
 
     private boolean hasRecipe() {
-        ItemStack result = new ItemStack(ModItems.SILVER);
-        boolean hasInput = getStack(INPUT_SLOT).getItem() == ModItems.SILVER_CHUNK;
+        ItemStack result = new ItemStack(ModItems.PLATINUM);
+        boolean hasInput = getStack(INPUT_SLOT).getItem() == ModItems.RAW_PLATINUM;
 
         return hasInput && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
     }

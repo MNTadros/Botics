@@ -10,10 +10,10 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class SocketApplicatingScreen extends HandledScreen<SocketApplicatingScreenHandler> {
-    private static final Identifier TEXTURE = new Identifier(Botics.MOD_ID, "textures/gui/socket_applicator_gui.png");
+public class GemPolishingScreen extends HandledScreen<GemPolishingScreenHandler> {
+    private static final Identifier TEXTURE = new Identifier(Botics.MOD_ID, "textures/gui/gem_polishing_station_gui.png");
 
-    public SocketApplicatingScreen(SocketApplicatingScreenHandler handler, PlayerInventory inventory, Text title) {
+    public GemPolishingScreen(GemPolishingScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 
@@ -45,8 +45,7 @@ public class SocketApplicatingScreen extends HandledScreen<SocketApplicatingScre
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-//        renderBackground(context, mouseX, mouseY, delta);
-        renderBackground(context);
+        renderBackground(context, mouseX, mouseY, delta);
         super.render(context, mouseX, mouseY, delta);
         drawMouseoverTooltip(context, mouseX, mouseY);
     }

@@ -1,8 +1,8 @@
 package empty.botics.block.custom;
 
 
+import empty.botics.block.entity.GemPolishingStationBlockEntity;
 import empty.botics.block.entity.ModBlockEntities;
-import empty.botics.block.entity.SocketApplicatorBlockEntity;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
@@ -19,10 +19,10 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class SocketApplicatorBlock extends BlockWithEntity implements BlockEntityProvider {
+public class GemPolishingStationBlock extends BlockWithEntity implements BlockEntityProvider {
     private static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 12, 16);
 
-    public SocketApplicatorBlock(Settings settings) {
+    public GemPolishingStationBlock(Settings settings) {
         super(settings);
     }
 
@@ -39,15 +39,15 @@ public class SocketApplicatorBlock extends BlockWithEntity implements BlockEntit
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new SocketApplicatorBlockEntity(pos, state);
+        return new GemPolishingStationBlockEntity(pos, state);
     }
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof SocketApplicatorBlockEntity) {
-                ItemScatterer.spawn(world, pos, (SocketApplicatorBlockEntity)blockEntity);
+            if (blockEntity instanceof GemPolishingStationBlockEntity) {
+                ItemScatterer.spawn(world, pos, (GemPolishingStationBlockEntity)blockEntity);
                 world.updateComparators(pos,this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -57,7 +57,7 @@ public class SocketApplicatorBlock extends BlockWithEntity implements BlockEntit
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = ((SocketApplicatorBlockEntity) world.getBlockEntity(pos));
+            NamedScreenHandlerFactory screenHandlerFactory = ((GemPolishingStationBlockEntity) world.getBlockEntity(pos));
 
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
@@ -66,11 +66,10 @@ public class SocketApplicatorBlock extends BlockWithEntity implements BlockEntit
 
         return ActionResult.SUCCESS;
     }
-
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return getDefaultState().getBlockEntityTicker(type, ModBlockEntities.SOCKET_APPLICATOR_BLOCK_ENTITY,
+        return validateTicker(type, ModBlockEntities.GEM_POLISHING_STATION_BLOCK_ENTITY,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }

@@ -33,6 +33,7 @@ public class ModItems {
 
     public static final Item WRENCH = registerItem("wrench", new Item(new FabricItemSettings().maxCount(1)));
     public static final Item FRIEND_BALL = registerItem("friend_ball", new Item(new FabricItemSettings().maxCount(1)));
+    public static final Item PARTICLE_BALL = registerItem("particle_ball", new Item(new FabricItemSettings().maxCount(1)));
 
     public static final Item URANIUM = registerItem("uranium", new Item(new FabricItemSettings()));
     public static final Item HOURGLASS = registerItem("hourglass", new Item(new FabricItemSettings()));

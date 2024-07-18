@@ -44,6 +44,7 @@ public class ModItemGroups {
         entries.add(ModItems.GOLD_SCRAP);
         entries.add(ModItems.WRENCH);
         entries.add(ModItems.FRIEND_BALL);
+        entries.add(ModItems.PARTICLE_BALL);
         entries.add(ModItems.URANIUM);
         entries.add(ModItems.HOURGLASS);
 

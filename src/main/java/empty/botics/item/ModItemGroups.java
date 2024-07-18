@@ -60,6 +60,7 @@ public class ModItemGroups {
         entries.add(ModItems.PLATINUM_BOOTS);
 
         entries.add(ModBlocks.GEM_POLISHING_STATION);
+        entries.add(ModBlocks.SOCKET_STATION);
 
     } ).build());
 

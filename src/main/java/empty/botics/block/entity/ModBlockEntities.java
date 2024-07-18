@@ -14,6 +14,11 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(GemPolishingStationBlockEntity::new,
                             ModBlocks.GEM_POLISHING_STATION).build());
 
+    public static final BlockEntityType<GemPolishingStationBlockEntity> SOCKET_STATION_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(Botics.MOD_ID, "socket_be"),
+                    FabricBlockEntityTypeBuilder.create(GemPolishingStationBlockEntity::new,
+                            ModBlocks.SOCKET_STATION).build());
+
     public static void registerBlockEntities() {
         Botics.LOGGER.info("Registering Block Entities for " + Botics.MOD_ID);
     }

@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "socket_applicator",
-		"particle": "socket_applicator"
+		"1": "botics:block/socket_station_texture",
+		"particle": "botics:block/socket_station_texture"
 	},
 	"elements": [
 		{

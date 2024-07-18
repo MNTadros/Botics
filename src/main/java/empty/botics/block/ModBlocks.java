@@ -2,6 +2,7 @@ package empty.botics.block;
 
 import empty.botics.Botics;
 import empty.botics.block.custom.GemPolishingStationBlock;
+import empty.botics.block.custom.SocketStationBlock;
 import empty.botics.block.custom.TendrilCropBlock;
 import empty.botics.block.custom.WaterBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -38,6 +39,9 @@ public class ModBlocks {
 
     public static final Block GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
             new GemPolishingStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+
+    public static final Block SOCKET_STATION = registerBlock("socket_station",
+            new SocketStationBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);

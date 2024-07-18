@@ -14,9 +14,9 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(GemPolishingStationBlockEntity::new,
                             ModBlocks.GEM_POLISHING_STATION).build());
 
-    public static final BlockEntityType<GemPolishingStationBlockEntity> SOCKET_STATION_BLOCK_ENTITY =
+    public static final BlockEntityType<SocketStationBlockEntity> SOCKET_STATION_BLOCK_ENTITY =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(Botics.MOD_ID, "socket_be"),
-                    FabricBlockEntityTypeBuilder.create(GemPolishingStationBlockEntity::new,
+                    FabricBlockEntityTypeBuilder.create(SocketStationBlockEntity::new,
                             ModBlocks.SOCKET_STATION).build());
 
     public static void registerBlockEntities() {

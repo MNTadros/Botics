@@ -28,7 +28,7 @@ public class SocketStationBlockEntity extends BlockEntity implements ExtendedScr
 
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
-    private static final int INPUT_SLOT_2 = 3;
+//    private static final int INPUT_SLOT_2 = 3;
 
 
     protected final PropertyDelegate propertyDelegate;

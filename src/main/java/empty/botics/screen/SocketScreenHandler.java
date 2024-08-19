@@ -19,13 +19,13 @@ public class SocketScreenHandler extends ScreenHandler {
 
     public SocketScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(3));
+                new ArrayPropertyDelegate(2));
     }
 
     public SocketScreenHandler(int syncId, PlayerInventory playerInventory,
                                      BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(ModScreenHandlers.SOCKET_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) blockEntity), 3);
+        checkSize(((Inventory) blockEntity), 2);
         this.inventory = ((Inventory) blockEntity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = arrayPropertyDelegate;

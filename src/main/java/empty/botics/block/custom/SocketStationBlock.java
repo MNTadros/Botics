@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class SocketStationBlock extends BlockWithEntity implements BlockEntityProvider {
-    private static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 18, 16, 18);
+    private static final VoxelShape SHAPE = Block.createCuboidShape(0, 0, 0, 16, 12, 16);
 
     public SocketStationBlock(Settings settings) {
         super(settings);
@@ -60,11 +60,13 @@ public class SocketStationBlock extends BlockWithEntity implements BlockEntityPr
 
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
+                return ActionResult.SUCCESS;
             }
         }
 
-        return ActionResult.SUCCESS;
+        return ActionResult.PASS;
     }
+
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
